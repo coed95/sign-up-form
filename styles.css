@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Edo SZ";
+    src: url("./assets/fonts/edosz.ttf");
+}
+
+@font-face {
+    font-family: "Mr Reaves", sans-serif;
+    src: url("./assets/fonts/mreavesxlmodot-ultraitalic.ttf");
+}
+
+main {
+    display: flex;
+    gap: 45px;
+}
+
+img {
+    height: 150px;
+    width: auto;
+}
+
+/* image */
+
+.image {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("./assets/images/yakuza-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 7rem;
+    font-family: "Edo SZ";
+    padding: 0px;
+    gap: 8px;
+    margin-top: 40vh;
+    margin-bottom: 25vh;
+    height: 25%;
+}
+
+.text {
+    letter-spacing: 0.05em;
+}
+
+.credits {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 0.9em;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Mr Reaves";
+}
+
+.content > p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.input-section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input-section label {
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1px;
+}
+
+.input-section input {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 32px;
+}
+
+.inputs > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 84px;
+    row-gap: 18px;
+    margin-bottom: 18px;
+}
+
+.inputs label {
+    display: block;
+}
+
+.create-account {
+    background: linear-gradient(90deg,#e6d247,#c7ad26 50%,#b28a13);
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #000;
+    padding: 12px 48px;
+    box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.15), 5px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    background: #e6d247;
+    box-shadow: -10px 8px 5px rgba(0, 0, 0, 0.15), 8px 12px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(.95);
+}
+
+p.login {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 25px;
+}
+
+.login a {
+    color: #374151;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#error-message {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: red;
+}
