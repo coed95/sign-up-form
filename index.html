@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <main>
+        <div class="image">
+            <div class="title">
+                <img src="./assets/images/odin-lined.png" alt="logo" width="50px" height="auto" />
+                <p class="text">ODIN</p>
+            </div>
+            <p class="credits">Powered by SEGA™</p>
+        </div>
+        <div class="content">
+            <p>Yo! This ain't a real online service. You know you need something like this to get some s*** done in your life and realize your deepest dreams, so, sign up <em>now</em> to get started!</p>
+            <p>Come on... ya <em>know</em> ya want to.</p>
+            <form>
+                <div class="input-section">
+                    <h3>Let's do this!</h3>
+                    <div class="inputs">
+                        <div>
+                            <div>
+                                <label for="first-name">FIRST NAME</label>
+                                <input id="first-name" type="text" name="first-name">
+                            </div>
+                            <div>
+                                <label for="last-name">LAST NAME</label>
+                                <input id="last-name" type="text" name="last-name">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input id="email" type="email" name="email">
+                            </div>
+                            <div>
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input id="phone-number" type="tel" name="phone-number">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input id="password" type="password" name="password">
+                                <p id="error-message"></p>
+                            </div>
+                            <div>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input id="confirm-password" type="password" name="confirm-password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-account" type="submit">Create Account</button>
+            </form>
+            <p class="login">
+                Already have an account?
+                <a href="#">Log In</a>
+            </p>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
