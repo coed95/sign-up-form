@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("assets/fonts/Norse-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 40%;
+    min-height: 100vh;
+    background-image: url("assets/images/halie-west.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-band {
+    margin-top: 180px;
+    width: 100%;
+    padding: 18px 0;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image {
+    height: 100px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: "Norse-Bold", system-ui, sans-serif;
+    font-size: 84px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.content {
+    background: #f9fafb;
+    width: 60%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro,
+.form-section,
+.actions {
+    padding: 24px;
+}
+
+.intro {
+    padding: 48px 48px 24px;
+    font-weight: 600;
+}
+
+.intro p {
+    font-size: 28px;
+}
+
+.form-section {
+    background: white;
+    padding: 24px 48px 32px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.actions {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.actions button {
+    background: #596d48;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 36px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    max-width: 260px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.actions button:hover {
+    background: #4e5f3f;
+}
+
+.actions button:active {
+    transform: translateY(1px);
+}
+
+.actions a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signup-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+    max-width: 600px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input {
+    height: 36px;
+    padding: 6px 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+input[type="password"]:invalid:not(:placeholder-shown) {
+    border: 2px solid #dc2626;
+}
